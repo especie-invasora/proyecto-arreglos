@@ -38,6 +38,10 @@ int main(){
  
  
 
+ 
+ 
+    
+} 
 void crearMensaje(){
  int ren, col, i, j, k=0;
  cout << "porfavor proporcione el tamaño de la matriz" << endl;
@@ -49,34 +53,35 @@ cin >> ren ;
  char texto[ren*col];
  cout << "proporcione el texto de favor" << endl;
  cin >> texto;
- for(i=0 ; i<ren ; i++)
- for (j=0 ; j<col ; j++)
+ for(i=0 ; i<ren; i++)
+ for (j=0; j<col; j++)
  escitala[i][j] = texto[k++];
 cout << "El texto de la escitala espartana queda si  " << endl ;
- for (i=0 ; i<col ; i++)
- for (j=0 ; j<ren ; j++)
-cout<< escitala[i][j];
- endl;
+ for (i=0 ; i<ren ; i++)
+ for (j=0 ; j<col ; j++)
+cout<< escitala[i][j] ; 
+cout << endl;
+
+
 }
-void descifrarMensaje(){
+ void descifrarMensaje(){
  int ren, col, i, j, k=0;
-cout << "ingresa el tamaño de la citacala" << endl;
-cout << "renglones" << endl;
-cin >> ren ;
+ cout << "ingresa el tamaño de la citacala" << endl;
+ cout << "renglones" << endl;
+ cin >> ren ;
  cout << "columnas" << endl;
  cin >> col;
  char escitala[ren][col];
  char texto[ren*col];
-cout << "el texto  desifraso es ";
-cin >> texto ;
+ cout << "el texto  desifraso es ";
+ cin >> texto ;
  for (i=0 ; i<col ; i++)
  for (j=0 ; j<ren ; j++)
  escitala[j][i] = texto[k++];
  cout << "el texto cifrado es:" << endl;
  for (i=0 ; i<ren ; i++)
  for (j=0 ; j<col ; j++)
- cout << escitala[i][j]; 
- }
-    
-}
-    
+ cout << escitala[i][j];  
+ 
+  }
+ 
